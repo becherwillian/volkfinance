@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         <div class="slider-container">
           <label id="slider-label">Escolha o valor da parcela:</label>
-          <input type="range" id="slider" min="500" max="25000" step="1" value="500" oninput="updateValue(this.value)">
+          <input type="range" id="slider" min="500" max="10000" step="1" value="500" oninput="updateValue(this.value)">
           <div class="value-display">R$ 500,00</div>
         </div>
 
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
       label.textContent = 'Escolha o valor do crédito:';
     } else {
       slider.min = 250;
-      slider.max = 25000;
+      slider.max = 10000;
       slider.step = 100;
       label.textContent = 'Escolha o valor da parcela:';
     }
